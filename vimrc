@@ -10,14 +10,23 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Let there be color
+Plugin 'dracula/vim'
+Plugin 'tomasr/molokai'
+
+
 " File browser
 Plugin 'scrooloose/nerdtree'
 
 " Support java
 Plugin 'ervandew/eclim'
+" Support maven
+Plugin 'mikelue/vim-maven-plugin'
 
 " Support JavaScript
 Plugin 'pangloss/vim-javascript'
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,3 +42,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+colorscheme dracula
