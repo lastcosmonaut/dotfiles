@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'prettier/vim-prettier'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-syntastic/syntastic'
 
 " Support java
 Plugin 'ervandew/eclim'
