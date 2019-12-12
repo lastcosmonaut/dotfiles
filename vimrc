@@ -18,6 +18,9 @@ Plugin 'tomasr/molokai'
 " File browser
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'prettier/vim-prettier'
+Plugin 'sheerun/vim-polyglot'
+
 " Support java
 Plugin 'ervandew/eclim'
 " Support maven
