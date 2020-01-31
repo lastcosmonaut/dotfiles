@@ -30,6 +30,8 @@ Plugin 'mikelue/vim-maven-plugin'
 " Support JavaScript
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 
 
 " All of your Plugins must be added before the following line
