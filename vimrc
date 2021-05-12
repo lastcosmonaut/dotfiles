@@ -22,6 +22,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'liuchengxu/vim-clap'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'freitass/todo.txt-vim'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
